@@ -2,11 +2,11 @@
 
 
 
-![tela de login](projeto-fatec-poo/src/imagens/tela_login.png)
+![tela de login](src/imagens/tela_login.png)
 
 
 
-![tela de clientes](projeto-fatec-poo/src/imagens/tela_clientes.png)
+![tela de clientes](src/imagens/tela_clientes.png)
 
 
 
