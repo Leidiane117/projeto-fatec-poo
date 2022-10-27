@@ -4,6 +4,12 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/leidi/OneDrive/Documentos/NetBeansProjects/POO/src/poo/view/frameClientes.java</file>
+            <file>file:/C:/Users/leidi/OneDrive/Documentos/NetBeansProjects/POO/src/poo/until/Conexao.java</file>
+            <file>file:/C:/Users/leidi/OneDrive/Documentos/NetBeansProjects/POO/src/poo/controller/ClienteController.java</file>
+            <file>file:/C:/Users/leidi/OneDrive/Documentos/NetBeansProjects/POO/src/poo/view/frameLogin.java</file>
+            <file>file:/C:/Users/leidi/OneDrive/Documentos/NetBeansProjects/POO/src/script%20bd/Script%20bd.sql</file>
+            <file>file:/C:/Users/leidi/OneDrive/Documentos/NetBeansProjects/POO/src/poo/model/ClienteDAO.java</file>
+            <file>file:/C:/Users/leidi/OneDrive/Documentos/NetBeansProjects/POO/src/poo/view/frameAtualizarCliente.java</file>
         </group>
     </open-files>
 </project-private>
