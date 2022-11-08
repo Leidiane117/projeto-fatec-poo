@@ -19,6 +19,10 @@ public class ClienteController {
         clienteDAO = new ClienteDAO (); 
         return clienteDAO.listar(pes);
     }
+     public List<Cliente> listarTudo (Cliente pes) throws SQLException, ClassNotFoundException {
+        clienteDAO = new ClienteDAO (); 
+        return clienteDAO.listarTudo(pes);
+    }
     public Cliente excluir(Cliente pes) throws SQLException, ClassNotFoundException {
         clienteDAO = new ClienteDAO (); 
         return clienteDAO.excluir(pes);

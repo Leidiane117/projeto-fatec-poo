@@ -13,11 +13,14 @@ public class Cliente {
     public Cliente(int id) {
         this.id = id;
     }
-    //pesquisa 
-    public Cliente() {
+    //pesquisar
+    public Cliente(String nome) {
+       this.nome = nome;
+    }
+    //listar todos
+     public Cliente() {
        
     }
-    
     // para inserir pessoa
     public Cliente(String nome, String celular, String email) {
         this.nome = nome;

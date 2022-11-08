@@ -78,10 +78,10 @@ public class ClienteDAO {
    public List<Cliente> listar(Cliente clienteEntrada) throws SQLException{
         // usus: array armazena a lista de registros
         List<Cliente> pess = new ArrayList<>();
-        String sql = "select * from cliente";
+         String sql = "select * from cliente where nome like ?";
         // seta os valores
         try (PreparedStatement stmt = this.c.prepareStatement(sql)) {
-                     
+            stmt.setString(1,"%" + clienteEntrada.getNome() + "%");          
             try (ResultSet rs = stmt.executeQuery()) {
                 while (rs.next()) {
                     // criando o objeto Usuario
@@ -108,8 +108,42 @@ public class ClienteDAO {
         
       }
     
-   }  
+   } 
   
+public List<Cliente> listarTudo(Cliente clienteEntrada) throws SQLException{
+        // usus: array armazena a lista de registros
+        List<Cliente> pess = new ArrayList<>();
+         String sql = "select * from cliente";
+        // seta os valores
+        try (PreparedStatement stmt = this.c.prepareStatement(sql)) {
+                
+            try (ResultSet rs = stmt.executeQuery()) {
+                while (rs.next()) {
+                    // criando o objeto Usuario
+                    Cliente cliente = new Cliente(
+                            rs.getInt(1),
+                            rs.getString(2),
+                            rs.getString(3),
+                            rs.getString(4)
+                            
+                    );
+                    // adicion
+                    pess.add(cliente);
+                }
+                
+                rs.close();
+                stmt.close();
+                return pess;
+            }
+        catch(SQLException ex){
+              throw new RuntimeException(ex + "Algo aconteceu de errado com a conexão com a query, veja: ");
+          
+        
+        }
+        
+      }
+    
+}
 
 }
      
